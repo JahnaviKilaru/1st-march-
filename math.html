@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*Math fuction is performing for mathmatical operation
+		types
+		ceil
+		floor
+		round
+		random
+		aps
+		sqrt
+		pow*/
+		/*console.log(Math.ceil(12.8))
+		console.log(Math.floor(12.8))
+		console.log(Math.round(2.8))
+		console.log(Math.round(2.4))
+		console.log(Math.random())
+		console.log(Math.abs(-12.8))
+		console.log(Math.sqrt(196)
+		console.log(Math.pow(2,8))*/
+
+/*random password genration*/
+
+		var passwordList="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&"
+		randompassword=[]
+		for(i=1;i<=8;i++){
+			var randomNumber=Math.floor(Math.random()*passwordList.length)
+			randompassword.push(passwordList.charAt(randomNumber))
+		}
+		var finalResult=randompassword.join('')
+		console.log(finalResult)
+
+	</script>
+</body>
+</html>
